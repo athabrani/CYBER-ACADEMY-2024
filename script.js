@@ -1,7 +1,3 @@
-function tombol(){
-    alert("SELAMAT DATANG DI CYBER ACADEMY")
-}
-
 const apiKey = '____________';                                                                // Ganti dengan API Key Anda
 const url = `______________`;                                                                //masukkan URL api 
 
