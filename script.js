@@ -1,4 +1,3 @@
-const apiKey = '____________';                                                                // Ganti dengan API Key Anda
 const url = `______________`;                                                                //masukkan URL api 
 
 async function fetchNews() {
@@ -20,7 +19,7 @@ function displayNews(articles) {
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = ''; 
 
-    limitedArticles = articles.slice(0, __);
+    limitedArticles = articles.slice(0, __);                                        //mengatur banyaknya jumlah isi yang ingin ditampilkan 
 
     limitedArticles.forEach((article) => {
         const newsItem = document.createElement('div');
