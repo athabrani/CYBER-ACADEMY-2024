@@ -6,7 +6,7 @@ async function fetchNews() {
         const data = await response.json();
 
         if (data.status === 'ok') {
-            displayNews(data._______);
+            displayNews(data._______);                                              //lengkapi dengan bagian dari api yang sesuai
         } else {
             console.error('Error fetching news:', data.message);
         }
@@ -19,14 +19,15 @@ function displayNews(articles) {
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = ''; 
 
-    limitedArticles = articles.slice(0, __);                                        //mengatur banyaknya jumlah isi yang ingin ditampilkan 
+    _________ = articles.slice(0, __);                                        //mengatur banyaknya jumlah isi yang ingin ditampilkan 
 
-    limitedArticles.forEach((article) => {
+    _________.forEach((article) => {
         const newsItem = document.createElement('div');
         newsItem.className = 'news-item';
-
+        
+        //sesuaikan bagian rumpang dengan isi dari API
         newsItem.innerHTML = `
-            <h2>${article.________}</h2>                                                                //sesuaikan bagian rumpang dengan isi dari API
+            <h2>${article.________}</h2>                                                                
             <p><strong>________:</strong> ${article._______ }</p>
             <p><strong>________:</strong> ${new Date(article._________).toLocaleString()}</p>
             <p>${article.________}</p>
